@@ -10,7 +10,7 @@ import time
 import io
 
 # Gemini API Setup
-GOOGLE_API_KEY = "AIzaSyCL80IskILPHHLm93Npr-6w9TFMw8YIdWQ"  # Replace with your actual API key
+GOOGLE_API_KEY = "os.getenv('GEMINI_API_KEY')"  # Replace with your actual API key
 genai.configure(api_key=GOOGLE_API_KEY)
 version = 'models/gemini-1.5-flash'
 system_prompt = '''
